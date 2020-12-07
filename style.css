@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: hsl(0, 0%, 98%);
+}
+.main-container{
+    margin: 2rem;
+}
+.intro{
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0.9;
+}
+.intro *{
+    width: 40%;
+    margin: 0 auto;
+
+}
+#light{
+    font-weight: 100;
+}
+#bold{
+    margin-bottom: 1rem;
+}
+.intro p{
+    opacity: 0.7;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin: 6rem 4rem;
+}
+.section2{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+.section1, .section3{
+    margin: auto 0;
+}
+h3, #txt{
+    margin: 2rem;
+}
+.section1, .section3, .row1, .row2{
+    background: white;
+    border-radius: 10px;
+    padding-bottom:  2rem;
+    box-shadow: 0.11rem 0.1rem 1rem 0.1rem rgba(0, 0, 0, 0.096);
+}
+ .L{
+    background: black;
+    height: 0.4rem;
+    border-radius:10px  10px 0  0 ;
+}
+.line1{
+    background: hsl(180, 62%, 55%);
+}
+.line2{
+    background: hsl(0, 78%, 62%);
+}
+.line3{
+    background: hsl(34, 97%, 64%);
+}
+.line4{
+    background: hsl(212, 86%, 64%);
+}
+.section1 img{
+position: relative;
+right: -75%;
+}
+.row1 img{
+    position: relative;
+    right: -75%;
+}
+.row2 img{
+    position: relative;
+    right: -75%;
+}
+.section3 img{
+    position: relative;
+    right: -75%;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+
+}
+.attribution a{
+   text-decoration: none;
+   background: linear-gradient(30deg,hsl(34, 97%, 64%), hsl(180, 62%, 55%), hsl(0, 78%, 62%));
+   -webkit-text-fill-color: transparent;
+   -webkit-background-clip: text;
+}
+@media only screen and (max-width:1000px){
+    .intro *{
+        width: 60%;
+    }
+    .section1 img{
+        right: -60%;
+    }
+    .section3 img{
+        right: -60%;
+
+    }
+    .row1 img{
+        right: -60%;
+
+    }
+    .row2 img{
+        right: -60%;
+
+    }
+}
+@media only screen and (max-width:900px){
+.grid{
+    display: block;
+}
+.section1 img{
+    right: -80%;
+}
+.section3 img{
+    right: -80%;
+
+}
+.row1 img{
+    right: -80%;
+
+}
+.row2 img{
+    right: -80%;
+
+}
+.section2{
+    display: block;
+}
+.section1, .section3, .row1, .row2{
+    margin: 2rem auto;
+}
+.intro *{
+    width: 85%;
+}
+}
+@media only screen and (max-width:525px){
+    .intro *{
+        width: 100%;
+    }
+    .intro h1{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 0.96rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    .grid{
+        margin: 8rem 2rem;
+    }
+    img{
+        width: 3rem;
+    }
+    .section1 img{
+        right: -75%;
+    }
+    .section3 img{
+        right: -75%;
+
+    }
+    .attribution{
+        font-size: 0.8rem;
+    }
+    .row1 img{
+        right: -75%;
+
+    }
+    .row2 img{
+        right: -75%;
+
+    }
+}
